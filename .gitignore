@@ -1,1 +1,8 @@
 node_modules
+
+.angular/cache/13.3.5/
+
+.angular/cache/
+.angular/cache/13.3.5/angular-webpack/ac4f7c44714d7d61ad7af3f2d8bbf58720e1a60c/index.pack.old
+.angular/cache/13.3.5/angular-webpack/ac4f7c44714d7d61ad7af3f2d8bbf58720e1a60c/9.pack
+.angular/cache/13.3.5/angular-webpack/ac4f7c44714d7d61ad7af3f2d8bbf58720e1a60c/0.pack
