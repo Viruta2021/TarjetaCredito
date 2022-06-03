@@ -16,13 +16,13 @@
             <div class="card-body">
                 <h5 class="titulo">Agregar Tarjeta </h5>
 
-                <form>
+                <form [formGroup]="form" (ngSubmit)="agregarTarjeta()">
                     <div class="input-group input-group-lg mb-3">
                         <span class="input-group-text" id="basic-addon1">
                             <i class="fa-solid fa-user"></i>
                         </span>
                   
-                        <input type="text" class="form-control" placeholder="Titular" >
+                        <input  formControlName="titular"  type="text" class="form-control" placeholder="Titular" >
                       </div>
 
                       <div class="input-group input-group-lg mb-3">
@@ -31,7 +31,7 @@
                             <i class="fa-solid fa-credit-card"></i>
                         </span>
                   
-                        <input type="text" class="form-control" placeholder="Nº Tarjeta" >
+                        <input formControlName="numeroTarjeta"  type="text" class="form-control" placeholder="Nº Tarjeta" >
                       </div>
 
                       <div class="row">
@@ -42,7 +42,7 @@
                                     <i class="fa-solid fa-calendar"></i>
                                 </span>
                           
-                                <input type="text" class="form-control" placeholder="YY/MM" >
+                                <input formControlName="fechaexpiracion"  type="text" class="form-control" placeholder="YY/MM" >
                               </div>
                         </div>
                         <div class="col-lg-5">
@@ -52,14 +52,14 @@
                                     <i class="fa-solid fa-key"></i>
                                 </span>
                           
-                                <input type="password" class="form-control" placeholder="CVV" >
+                                <input formControlName="cvc" type="password" class="form-control" placeholder="CVV" >
                               </div>
                         </div>
 
                       </div>
                       <div class="d-grid gap-2"> 
                       
-                        <button type="button" class="btn btn-success">
+                        <button type="submit" class="btn btn-success">
                             <i class="fa-solid fa-database"></i>
                             &nbsp;
                             ACEPTAR</button>
